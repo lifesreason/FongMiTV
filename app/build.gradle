@@ -12,7 +12,6 @@ android {
     defaultConfig {
         applicationId "com.fongmi.android.tv"
         minSdk 24
-        missingDimensionStrategy 'mode', 'leanback'
         //noinspection ExpiredTargetSdkVersion
         targetSdk 28
         versionCode 416
@@ -32,10 +31,6 @@ android {
         }
         mobile {
             dimension "mode"
-        }
-        x86 {
-            dimension "abi"
-            ndk { abiFilters "x86" }
         }
         arm64_v8a {
             dimension "abi"
